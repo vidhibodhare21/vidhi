@@ -1,0 +1,9 @@
+def check_palindrome(intput_string):
+	cleaned_string=input_string.replace(" ", "").lower()
+	if cleaned_string==cleaned_string[::-1]:
+		return "palindrome"
+	else:
+		return "not a palindrome"
+input_string = input()
+result=check_palindrome(input_string)
+print(result)
